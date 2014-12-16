@@ -1,0 +1,746 @@
+--- !ruby/object:Game
+board: &1 !ruby/object:Board
+  mines: 5
+  unrevealed: 81
+  mine_coords:
+  - - 4
+    - 7
+  - - 2
+    - 0
+  - - 0
+    - 3
+  - - 1
+    - 7
+  - - 2
+    - 5
+  tiles:
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 2
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 3
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: true
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 4
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 5
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 0
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 0
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 1
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 2
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 3
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 4
+      revealed: 
+      flagged: 
+      render_symbol: '2'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 5
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: true
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 1
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 0
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: true
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 1
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 4
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 5
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: true
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 2
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 0
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 1
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 4
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 5
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: '2'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 3
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 4
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 5
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: true
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 4
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: "*"
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 4
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 5
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 6
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 7
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 5
+      - 8
+      revealed: 
+      flagged: 
+      render_symbol: '1'
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 4
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 5
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 6
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 7
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 6
+      - 8
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 4
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 5
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 6
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 7
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 7
+      - 8
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+  - - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 0
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 1
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 2
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 3
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 4
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 5
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 6
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 7
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+    - !ruby/object:Tile
+      board: *1
+      coords:
+      - 8
+      - 8
+      revealed: true
+      flagged: 
+      render_symbol: _
+      bombed: false
+  bombed: false
